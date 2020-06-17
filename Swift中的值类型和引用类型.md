@@ -6,6 +6,8 @@
 
   
 
+
+
 **值类型**（`withUnsafePointer(to:_:)` 函数可以用来打印值类型变量的内存地址）
 
 ```swift
@@ -29,7 +31,7 @@ personStructB.age = 30
 print(personStructA.name,personStructA.age) //name 20
 print(personStructB.name,personStructB.age) //nameB 30
 
-//swift中函数的参数默认是常量，而且值类型的常量，就意味该常量是不可变的，无论内部数据是var还是let修饰
+//swift中函数的参数默认是常量（除非用inout修饰），而且值类型的常量，就意味该常量是不可变的，无论内部数据是var还是let修饰
 func modifyPersonStruct(person: PersonStruct) {
   	//下面两行都会报错
     person.name = "modify name" //Cannot assign to property: 'person' is a 'let' constant
