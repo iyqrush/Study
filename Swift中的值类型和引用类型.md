@@ -28,6 +28,13 @@ personStructB.age = 30
 
 print(personStructA.name,personStructA.age) //name 20
 print(personStructB.name,personStructB.age) //nameB 30
+
+//swift中函数的参数默认是常量，而且值类型的常量，就意味该常量是不可变的，无论内部数据是var还是let修饰
+func modifyPersonStruct(person: PersonStruct) {
+  	//下面两行都会报错
+    person.name = "modify name" //Cannot assign to property: 'person' is a 'let' constant
+    person.age = 40 //Cannot assign to property: 'person' is a 'let' constant
+}
 ```
 
 
@@ -55,5 +62,13 @@ personClassB.age = 30
 //由于是同一份数据，所以打印出的结果是一样的
 print(personClassA.name,personClassA.age) //nameB 30
 print(personClassB.name,personClassB.age) //nameB 30
+
+func modifyPersonClass(person: PersonClass) {
+  	//因为person是常量，所以不能进行复制操作，
+    //person = PersonClass() //Cannot assign to value: 'person' is a 'let' constant
+  	//但是因为person是引用类型，所以可以对内部的数据进行修改
+    person.name = "modify name"
+    person.age = 40
+}
 ```
 
