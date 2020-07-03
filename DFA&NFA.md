@@ -4,9 +4,9 @@
 
 `NFA(不确定的有穷自动机)`对其边上的标号没有任何限制，一个符号离开同一状态的多条边，并且空串已也可以作为标号
 
-![image-20200703142657270](/Users/zhengzhilin/Library/Application Support/typora-user-images/image-20200703142657270.png)
+![image-20200703142657270](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggdwo5rq9rj30cc05tq35.jpg)
 
-![image-20200703142733430](/Users/zhengzhilin/Library/Application Support/typora-user-images/image-20200703142733430.png)
+![image-20200703142733430](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggdwo8v9ngj30c205qaae.jpg)
 
 NFA可以通过子集构造法生成和其等价的DFA
 

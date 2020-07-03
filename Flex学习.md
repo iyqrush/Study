@@ -30,7 +30,7 @@
 
   2. 如果最长的可能前缀与多个模式匹配，总是选择在Flex程序中先被列出的模式
 
-     ![image-20200703114514933](/Users/zhengzhilin/Library/Application Support/typora-user-images/image-20200703114514933.png)
+     ![image-20200703114514933](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggdwodnexrj30pi0e60vj.jpg)
 
   
 
